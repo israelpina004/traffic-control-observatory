@@ -1,0 +1,32 @@
+.backend-panel {
+    width: 1080px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+}
+
+.backend-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.backend-card {
+    flex: 1 1 160px;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+}
+
+.metric-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#completed {
+    color: #00ff00;
+}
+
+#errored {
+    color: #ff0000;
+}

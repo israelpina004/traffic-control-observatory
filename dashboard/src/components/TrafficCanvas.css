@@ -1,0 +1,8 @@
+#traffic-canvas {
+    width: 1080px;
+    height: 720px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    display: block;
+    background-color: #000;
+}
