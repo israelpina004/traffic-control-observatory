@@ -76,3 +76,4 @@ The project consists of two main components:
 ## Current Bugs
 - Traffic seems to be routed to servers even when workers haven't been started sometimes.
 - Upon refresh the website indicates that the workers aren't running and that a strategy hasn't been chosen even if the user has already started the workers and chosen a strategy.
+- How one user uses the website will affect another user's experience on their end. In other words, if another user simultaneously using the app starts the workers, then the other users will also have their workers started, which may not be what they want. This is because the backend is a single process, and the frontend isn't aware of any other users using the app.
