@@ -66,7 +66,7 @@ The project consists of two main components:
 
 ## Deployment
 
-- **Frontend**: Deployed to Vercel. Live URL: https://traffic-control-observatory.vercel.app
+- **Frontend**: Deployed to Vercel. Live URL: https://lb-simulator.vercel.app
 - **Backend**: Deployed to Render. Live URL: https://lb-simulator-backend.onrender.com
 
 ## Tech Stack
@@ -74,5 +74,5 @@ The project consists of two main components:
 - **Frontend**: React, TypeScript, Vite, Vanilla CSS
 
 ## Current Bugs
-- Traffic seems to be routed to servers even when workers haven't been started.
+- Traffic seems to be routed to servers even when workers haven't been started sometimes.
 - Upon refresh the website indicates that the workers aren't running and that a strategy hasn't been chosen even if the user has already started the workers and chosen a strategy.
