@@ -27,8 +27,8 @@ export function useBackendStats() {
                 const adjustedData: BackendStats = {}
 
                 for (let i = 0; i < NUM_SERVERS; i++) {
-                    const server = data[i]
-                    const baselineServer = baselineRequests.current![i]
+                    const server = data[i] || { Completed: 0, Routed: 0, Errored: 0, Latency: 0 }
+                    const baselineServer = baselineRequests.current![i] || { Completed: 0, Routed: 0, Errored: 0, Latency: 0 }
 
                     adjustedData[i] = {
                         ...server,
