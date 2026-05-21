@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import type { BackendStats } from '../types/types'
 
 
-const API_URL = "" // TODO: Edit after deployment of backend to Render
+const API_URL = "https://lb-simulator-backend.onrender.com/api/stats" // TODO: Edit after deployment of backend to Render
 const NUM_SERVERS = 10
 
 export function useBackendStats() {

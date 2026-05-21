@@ -8,7 +8,7 @@ import StrategySelector from './components/StrategySelector'
 import { TrafficController } from './components/TrafficController'
 
 function App() {
-  const URL = "" // TODO: Edit after deployment of backend to Render
+  const URL = "https://lb-simulator-backend.onrender.com/ws" // TODO: Edit after deployment of backend to Render
   const { latestBatch } = useWebSocket(URL);
   const { stats, history } = useBackendStats();
 

@@ -2,7 +2,7 @@ import { useState } from 'react'
 // import { Tooltip } from 'react-tooltip'
 import './StrategySelector.css'
 
-const API_URL = "" // TODO: Edit after deployment of backend to Render
+const API_URL = "https://lb-simulator-backend.onrender.com" // TODO: Edit after deployment of backend to Render
 
 export default function StrategySelector() {
   const [strategy, setStrategy] = useState('')
