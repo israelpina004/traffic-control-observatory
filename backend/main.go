@@ -124,7 +124,7 @@ func main() {
 	// Start workers
 	runner := workers.NewRunner(VM_IP+PORT, CONCURRENCY)
 
-	apiPort := os.Getenv("API_PORT")
+	apiPort := os.Getenv("PORT")
 	if apiPort == "" {
 		apiPort = "8081"
 	}
